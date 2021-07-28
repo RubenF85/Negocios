@@ -1,7 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
-
+html,
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 header {
@@ -19,17 +22,15 @@ header {
   color: white;
   text-align: center;
 }
-h1 {
+
+.title-text-large {
   text-transform: uppercase;
   margin: 0;
   font-size: 3rem;
-  white-space: nowrap;
+  font-weight: bold;
 }
 
-h2 {
-  font-size: 2rem;
-}
-p {
+.title-text-small {
   margin: 0;
   font-size: 1.3rem;
 }
@@ -43,8 +44,17 @@ p {
 }
 
 .info-card {
-  min-width: 300px;
-  max-width: 25%;
-  margin: 20px auto;
+  width: 22%;
+  margin: 20px 20px;
   text-align: center;
+}
+
+.info-card-header {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.info-card-button {
+  margin-top: 1rem;
 }

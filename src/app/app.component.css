@@ -17,6 +17,7 @@ header {
 .title-text-large {
   text-transform: uppercase;
   margin: 0;
+  margin-top: .5rem;
   font-size: 3rem;
   font-weight: bold;
 }
@@ -42,6 +43,7 @@ header {
 
 .info-card-header {
   margin: 0;
+  margin-top: .2rem;
   padding-bottom: .5rem;
   font-size: 1.8rem;
   font-weight: bold;

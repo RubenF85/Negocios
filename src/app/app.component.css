@@ -69,3 +69,7 @@ header {
   overflow: visible;
 }
 
+li {
+  text-align: left;
+}
+

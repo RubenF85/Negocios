@@ -6,12 +6,16 @@ import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+import { EstimatesComponent } from './pages/estimates/estimates.component';
+import { CommingSoonComponent } from './pages/comming-soon/comming-soon.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    EstimatesComponent,
+    CommingSoonComponent
   ],
   imports: [
     BrowserModule,

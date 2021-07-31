@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { EstimatesComponent } from './pages/estimates/estimates.component';
+import { ValuationsDesktopComponent } from './pages/valuations-desktop/valuations-desktop.component';
+import { ValuationsFullComponent } from './pages/valuations-full/valuations-full.component';
+import { ValuationsDeltaComponent } from './pages/valuations-delta/valuations-delta.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'estimates', component: EstimatesComponent },
-  { path: 'valuations/desktop', component: EstimatesComponent },
-  { path: 'valuations/full', component: EstimatesComponent },
-  { path: 'valuations/delta', component: EstimatesComponent },
+  { path: 'valuations/desktop', component: ValuationsDesktopComponent },
+  { path: 'valuations/full', component: ValuationsFullComponent },
+  { path: 'valuations/delta', component: ValuationsDeltaComponent },
   { path: '**', redirectTo: '' },
 ];
 

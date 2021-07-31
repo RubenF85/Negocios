@@ -7,6 +7,9 @@ import { EstimatesComponent } from './pages/estimates/estimates.component';
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'estimates', component: EstimatesComponent },
+  { path: 'valuations/desktop', component: EstimatesComponent },
+  { path: 'valuations/full', component: EstimatesComponent },
+  { path: 'valuations/delta', component: EstimatesComponent },
   { path: '**', redirectTo: '' },
 ];
 

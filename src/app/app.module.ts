@@ -8,6 +8,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EstimatesComponent } from './pages/estimates/estimates.component';
 import { CommingSoonComponent } from './pages/comming-soon/comming-soon.component';
+import { ValuationsDesktopComponent } from './pages/valuations-desktop/valuations-desktop.component';
+import { ValuationsFullComponent } from './pages/valuations-full/valuations-full.component';
+import { ValuationsDeltaComponent } from './pages/valuations-delta/valuations-delta.component';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { CommingSoonComponent } from './pages/comming-soon/comming-soon.componen
     AppComponent,
     HomeComponent,
     EstimatesComponent,
-    CommingSoonComponent
+    CommingSoonComponent,
+    ValuationsDesktopComponent,
+    ValuationsFullComponent,
+    ValuationsDeltaComponent
   ],
   imports: [
     BrowserModule,

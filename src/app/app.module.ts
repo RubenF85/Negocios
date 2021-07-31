@@ -14,6 +14,7 @@ import { ValuationsDeltaComponent } from './pages/valuations-delta/valuations-de
 import { TestComponent } from './pages/test/test.component';
 import { SidedrawComponent } from './page-components/sidedraw/sidedraw.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { EstimatesworkspaceComponent } from './workspaces/estimatesworkspace/estimatesworkspace.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     ValuationsDeltaComponent,
     TestComponent,
     SidedrawComponent,
+    EstimatesworkspaceComponent,
   ],
   imports: [
     BrowserModule,

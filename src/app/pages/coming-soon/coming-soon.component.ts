@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./coming-soon.component.css'],
 })
 export class CommingSoonComponent implements OnInit {
-  @Input() deadline: any = null;
+  @Input() deadline: any;
   countdown: any;
 
   constructor() {}

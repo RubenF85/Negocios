@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { EstimatesworkspaceComponent } from 'src/app/workspaces/estimatesworkspace/estimatesworkspace.component';
 
 @Component({
   selector: 'app-sidedraw',
@@ -7,4 +8,5 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidedrawComponent {
   isShown = true;
+  workspaceComponent = EstimatesworkspaceComponent;
 }

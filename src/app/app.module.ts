@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,7 +11,9 @@ import { CommingSoonComponent } from './pages/coming-soon/coming-soon.component'
 import { ValuationsDesktopComponent } from './pages/valuations-desktop/valuations-desktop.component';
 import { ValuationsFullComponent } from './pages/valuations-full/valuations-full.component';
 import { ValuationsDeltaComponent } from './pages/valuations-delta/valuations-delta.component';
-
+import { TestComponent } from './pages/test/test.component';
+import { SidedrawComponent } from './page-components/sidedraw/sidedraw.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -21,15 +23,18 @@ import { ValuationsDeltaComponent } from './pages/valuations-delta/valuations-de
     CommingSoonComponent,
     ValuationsDesktopComponent,
     ValuationsFullComponent,
-    ValuationsDeltaComponent
+    ValuationsDeltaComponent,
+    TestComponent,
+    SidedrawComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatSidenavModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

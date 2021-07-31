@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-coming-soon',
@@ -6,19 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./coming-soon.component.css'],
 })
 export class CommingSoonComponent implements OnInit {
+  @Input() deadline: any = null;
+  countdown: any;
+
   constructor() {}
 
-  ngOnInit(): void {
-    // Set the date we're counting down to
-    const countDownDate = new Date('Jan 5, 2022 15:37:25').getTime();
-
+  setCountDown() {
+    console.log(this.deadline);
     // Update the count down every 1 second
-    const x = setInterval(function () {
+    this.countdown = setInterval(() => {
       // Get todays date and time
       var now = new Date().getTime();
 
       // Find the distance between now an the count down date
-      var distance = countDownDate - now;
+      var distance = this.deadline - now;
 
       // Time calculations for days, hours, minutes and seconds
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -34,9 +35,23 @@ export class CommingSoonComponent implements OnInit {
 
       // If the count down is finished, write some text
       if (distance < 0) {
-        clearInterval(x);
+        clearInterval(this.countdown);
         document.getElementById('demo')!.innerHTML = 'EXPIRED';
       }
     }, 1000);
+  }
+
+  cancelCountDown() {
+    if (this.countdown) {
+      clearInterval(this.countdown);
+    }
+  }
+
+  ngOnInit(): void {
+    this.setCountDown();
+  }
+
+  ngOnDestroy() {
+    this.cancelCountDown();
   }
 }

@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./valuations-desktop.component.css']
 })
 export class ValuationsDesktopComponent implements OnInit {
+  // Set the date we're counting down to
+  deadline = new Date('Sep 19, 2021 23:59:59').getTime();
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
-  }
 
+}
 }

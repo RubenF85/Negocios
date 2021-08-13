@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EstimatesworkspaceComponent } from './estimatesworkspace.component';
+import { FormBasicBusinessDetailsComponent } from './basic-business-details.component';
 
 describe('EstimatesworkspaceComponent', () => {
-  let component: EstimatesworkspaceComponent;
-  let fixture: ComponentFixture<EstimatesworkspaceComponent>;
+  let component: FormBasicBusinessDetailsComponent;
+  let fixture: ComponentFixture<FormBasicBusinessDetailsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EstimatesworkspaceComponent ]
+      declarations: [ FormBasicBusinessDetailsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EstimatesworkspaceComponent);
+    fixture = TestBed.createComponent(FormBasicBusinessDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

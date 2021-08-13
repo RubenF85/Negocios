@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { EstimatesComponent } from './pages/estimates/estimates.component';
 import { ValuationsDesktopComponent } from './pages/valuations-desktop/valuations-desktop.component';
 import { ValuationsFullComponent } from './pages/valuations-full/valuations-full.component';
 import { ValuationsDeltaComponent } from './pages/valuations-delta/valuations-delta.component';
-import { TestComponent } from './pages/test/test.component';
+import { EstimatesComponent } from './pages/estimates/estimates.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },

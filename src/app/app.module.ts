@@ -11,10 +11,9 @@ import { CommingSoonComponent } from './pages/coming-soon/coming-soon.component'
 import { ValuationsDesktopComponent } from './pages/valuations-desktop/valuations-desktop.component';
 import { ValuationsFullComponent } from './pages/valuations-full/valuations-full.component';
 import { ValuationsDeltaComponent } from './pages/valuations-delta/valuations-delta.component';
-import { TestComponent } from './pages/test/test.component';
 import { SidedrawComponent } from './page-components/sidedraw/sidedraw.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { EstimatesworkspaceComponent } from './workspaces/estimatesworkspace/estimatesworkspace.component';
+import { FormBasicBusinessDetailsComponent } from './forms/basic-business-details/basic-business-details.component';
 
 @NgModule({
   declarations: [
@@ -25,9 +24,8 @@ import { EstimatesworkspaceComponent } from './workspaces/estimatesworkspace/est
     ValuationsDesktopComponent,
     ValuationsFullComponent,
     ValuationsDeltaComponent,
-    TestComponent,
     SidedrawComponent,
-    EstimatesworkspaceComponent,
+    FormBasicBusinessDetailsComponent,
   ],
   imports: [
     BrowserModule,

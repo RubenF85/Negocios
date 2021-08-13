@@ -1,5 +1,8 @@
 .sidenav-container {
   height: 100vh;
+  display: flex; 
+  flex-direction: row; 
+  width: fit-content
 }
 
 .sidenav {
@@ -23,7 +26,6 @@
   justify-content: center;
   align-items: center;
   color: #d1d6e0;
-  font-size: 40px;
   font-weight: 100;
   border-width: 0;
   padding: 0;

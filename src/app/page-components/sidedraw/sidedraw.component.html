@@ -1,5 +1,6 @@
-<div style="display: flex">
-  <mat-sidenav-container class="sidenav-container">
+<div class="sidenav-container">
+  <mat-sidenav-container >
+
     <mat-sidenav
       class="sidenav"
       #sidenav
@@ -11,16 +12,12 @@
       Sidenav content
     </mat-sidenav>
 
-    <mat-sidenav-content>
-      <p>
-        <button class="toggleButton" mat-button (click)="sidenav.toggle()">
+    <mat-sidenav-content style='background-color: white;'>
+        <button mat-button class="toggleButton"  (click)="sidenav.toggle()">
           <img *ngIf="isShown" src="../../../assets/icons/arrow-left.png" />
           <img *ngIf="!isShown" src="../../../assets/icons/arrow-right.png" />
-        </button></p
-    ></mat-sidenav-content>
+        </button>
+    </mat-sidenav-content>
+
   </mat-sidenav-container>
-  <div style="display: flex; flex-grow: 1">
-    <app-estimatesworkspace></app-estimatesworkspace>
-    <!-- <ng-container *ngComponentOutlet="workspaceComponent"></ng-container> -->
-  </div>
 </div>

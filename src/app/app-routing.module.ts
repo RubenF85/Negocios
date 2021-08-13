@@ -14,7 +14,6 @@ const routes: Routes = [
   { path: 'valuations/desktop', component: ValuationsDesktopComponent },
   { path: 'valuations/full', component: ValuationsFullComponent },
   { path: 'valuations/delta', component: ValuationsDeltaComponent },
-  { path: 'test', component: TestComponent },
   { path: '**', redirectTo: '' },
 ];
 

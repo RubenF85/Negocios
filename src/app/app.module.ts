@@ -13,7 +13,7 @@ import { ValuationsFullComponent } from './pages/valuations-full/valuations-full
 import { ValuationsDeltaComponent } from './pages/valuations-delta/valuations-delta.component';
 import { SidedrawComponent } from './page-components/sidedraw/sidedraw.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { FormBasicBusinessDetailsComponent } from './forms/basic-business-details/basic-business-details.component';
+import { FormBuilderComponent } from './forms/form-builder/form-builder.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { FormBasicBusinessDetailsComponent } from './forms/basic-business-detail
     ValuationsFullComponent,
     ValuationsDeltaComponent,
     SidedrawComponent,
-    FormBasicBusinessDetailsComponent,
+    FormBuilderComponent,
   ],
   imports: [
     BrowserModule,

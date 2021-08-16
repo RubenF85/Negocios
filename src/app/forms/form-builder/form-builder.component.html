@@ -1,0 +1,26 @@
+<div class='form-container'>
+    <div class='header-container'>
+        {{ formContent.header }}
+    </div>
+
+    <div class="questionaire-container">
+        <div *ngFor='let question of formContent.questions'>
+            <div class='question-container'>
+                <div class='label-container'>
+                    <label for={{question.labelFor}}>{{question.label}}</label>
+                </div>
+                <div [ngSwitch]='question.inputType' class='response-container'>
+                    <input *ngSwitchCase="'standard-text'" type={{question.inputType}} id={{question.inputID}}
+                        name={{question.inputName}}>
+                    <input *ngSwitchCase="'small-text'" class='small-text' type={{question.inputType}} id={{question.inputID}}
+                        name={{question.inputName}}>
+                    <select *ngSwitchCase="'dropDown'" id={{question.inputID}} name={{question.inputName}} required>
+                        <option *ngFor='let option of question.dropDownOptions' value="option">
+                            {{option}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

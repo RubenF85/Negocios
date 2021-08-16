@@ -22,7 +22,7 @@ export interface formShortTextQuestion extends formQuestionMinimumContent {
 
 export interface formDropDownQuestion extends formQuestionMinimumContent {
     inputType: 'dropDown'
-    dropDownOptions? : Array<any>
+    dropDownOptions : Array<string>
 }
 
 

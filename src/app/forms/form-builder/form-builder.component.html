@@ -12,7 +12,7 @@
                 <div [ngSwitch]='question.inputType' class='response-container'>
                     <input *ngSwitchCase="'standard-text'" type={{question.inputType}} id={{question.inputID}}
                         name={{question.inputName}}>
-                    <input *ngSwitchCase="'small-text'" class='small-text' type={{question.inputType}}
+                    <input *ngSwitchCase="'short-text'" class='short-text' type={{question.inputType}}
                         id={{question.inputID}} name={{question.inputName}}>
                     <select *ngSwitchCase="'dropDown'" id={{question.inputID}} name={{question.inputName}} required>
                         <option *ngFor='let option of question.dropDownOptions' value="option">

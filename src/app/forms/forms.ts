@@ -5,7 +5,7 @@ import {
   formQuestionNameOfBusiness,
 } from './form-questions';
 
-export const formContentEstimatesBusinessBasics: formTemplateObject = {
+export const formEstimatesBusinessBasics: formTemplateObject = {
   header: 'Basic Business Details',
   questions: [
     formQuestionNameOfBusiness,

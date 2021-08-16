@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { formTemplateObject } from '../form-interfaces';
-import { formContentEstimatesBusinessBasics } from '../forms';
+import { formEstimatesBusinessBasics } from '../forms';
 
 @Component({
   selector: 'app-form-builder',
@@ -21,7 +21,7 @@ export class FormBuilderComponent implements OnInit {
   getForm(formNumber: number) {
     switch (formNumber) {
       case 1: {
-        this.formContent = formContentEstimatesBusinessBasics;
+        this.formContent = formEstimatesBusinessBasics;
         break;
       }
       case 2: {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { formTemplateObject } from '../form-objects';
 import { formContentEstimatesBusinessBasics } from '../form-objects';
 
 @Component({
@@ -8,7 +9,7 @@ import { formContentEstimatesBusinessBasics } from '../form-objects';
 })
 
 export class FormBuilderComponent implements OnInit {
-  formContent: any;
+  formContent: formTemplateObject = {header: 'Test', questions: []};
   workFlowStep = 0;
 
   nextForm() {
@@ -24,7 +25,7 @@ export class FormBuilderComponent implements OnInit {
         break;
       }
       case 2: {
-        this.formContent = {}
+        this.formContent = {header: 'Financial Details', questions: []}
         break;
       }
     }

@@ -1,15 +1,5 @@
-.workspace-container {
-    display: flex;
-    flex-grow: 1;
-}
-
 .form-container {
     display: flex; 
     flex-grow: 1;
-}
-
-@media screen and (max-width: 1000px) {
-    .sidedraw-container {
-        display: none;
-    }
+    width: 100%;
 }

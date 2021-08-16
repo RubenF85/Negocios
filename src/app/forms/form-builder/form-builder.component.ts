@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { formContentEstimatesBusinessBasics } from '../form-objects';
 
 @Component({
   selector: 'app-form-builder',
@@ -6,37 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-builder.component.css'],
 })
 export class FormBuilderComponent {
-  formContent = {
-    header: 'Basic Business Details',
-    questions: [
-      {
-        label: 'Name of Business',
-        labelFor: 'businsess-name',
-        inputType: 'standard-text',
-        inputID: 'businsess-name',
-        inputName: 'businsess-name',
-      },
-      {
-        label: 'Business Entity Type',
-        labelFor: 'entity-type',
-        inputType: 'dropDown',
-        inputID: 'entity-type',
-        inputName: 'entity-type',
-        dropDownOptions: [
-          'Sole Proprietorship',
-          'Partnership',
-          'Public Company',
-          'Private Company',
-          'Personal Liability Company (Inc)',
-        ],
-      },
-      {
-        label: 'Business Founding Year',
-        labelFor: 'founding-year',
-        inputType: 'small-text',
-        inputID: 'founding-year',
-        inputName: 'founding-year',
-      },
-    ],
-  };
+  formContent = formContentEstimatesBusinessBasics
 }

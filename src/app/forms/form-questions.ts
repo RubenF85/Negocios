@@ -1,9 +1,10 @@
 import {
+    formCascadingQuestion,
   formDropDownQuestion,
   formShortTextQuestion,
   formStandardTextQuestion,
 } from './form-interfaces';
-import { entityTypes, sectors } from './form-lists';
+import { entityTypes, IndustryGroup, sectors } from './form-lists';
 
 export const formQuestionNameOfBusiness: formStandardTextQuestion = {
   inputType: 'standard-text',
@@ -30,11 +31,25 @@ export const formQuestionBusinessFoundingYear: formShortTextQuestion = {
   inputName: 'founding-year',
 };
 
-export const formQuestionBusinessSector: formDropDownQuestion = {
-  inputType: 'dropDown',
-  label: 'Business Sector',
-  labelFor: 'sector',
-  inputID: 'sector',
-  inputName: 'sector',
-  dropDownOptions: sectors,
-};
+const formQuestionBusinessSector: formDropDownQuestion = {
+    inputType: 'dropDown',
+    label: 'Business Sector',
+    labelFor: 'sector',
+    inputID: 'sector',
+    inputName: 'sector',
+    dropDownOptions: sectors,
+  }
+
+  const formQuestionBusinessIndustryGroups: formDropDownQuestion = {
+    inputType: 'dropDown',
+    label: 'Business Industry Group',
+    labelFor: 'industry-group',
+    inputID: 'industry-group',
+    inputName: 'industry-group',
+    dropDownOptions: IndustryGroup.CommunicationServices,
+  }
+
+export const formCascadeQuestionBusinessSector: formCascadingQuestion = {
+  inputType: 'cascading',
+  questionsList: [formQuestionBusinessSector, formQuestionBusinessIndustryGroups]
+}

@@ -1,8 +1,8 @@
 import { formTemplateObject } from './form-interfaces';
 import {
+  formCascadeQuestionBusinessSector,
   formQuestionBusinessEntityType,
   formQuestionBusinessFoundingYear,
-  formQuestionBusinessSector,
   formQuestionNameOfBusiness,
 } from './form-questions';
 
@@ -12,6 +12,6 @@ export const formEstimatesBusinessBasics: formTemplateObject = {
     formQuestionNameOfBusiness,
     formQuestionBusinessEntityType,
     formQuestionBusinessFoundingYear,
-    formQuestionBusinessSector,
+    formCascadeQuestionBusinessSector,
   ],
 };

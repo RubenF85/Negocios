@@ -25,7 +25,10 @@ export interface formDropDownQuestion extends formQuestionMinimumContent {
     dropDownOptions : Array<string>
 }
 
-
+export interface formCascadingQuestion {
+    inputType: 'cascading'
+    questionsList : Array<any>
+}
 
 
 

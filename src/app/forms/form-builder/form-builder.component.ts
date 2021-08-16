@@ -7,14 +7,12 @@ import { formEstimatesBusinessBasics } from '../forms';
   templateUrl: './form-builder.component.html',
   styleUrls: ['./form-builder.component.css'],
 })
-
 export class FormBuilderComponent implements OnInit {
-  formContent!: formTemplateObject
+  formContent!: formTemplateObject;
   workFlowStep = 0;
 
   nextForm() {
     this.workFlowStep++;
-    console.log(this.workFlowStep)
     this.getForm(this.workFlowStep);
   }
 
@@ -25,12 +23,13 @@ export class FormBuilderComponent implements OnInit {
         break;
       }
       case 2: {
-        this.formContent = {header: 'Financial Details', questions: []}
+        this.formContent = { header: 'Financial Details', questions: [] };
         break;
       }
     }
   }
 
   ngOnInit() {
-    this.nextForm();  }
+    this.nextForm();
+  }
 }

@@ -21,7 +21,7 @@
 }
 
 .question-container {
-    /* background-color: red; */
+    /* background-color:darkgreen; */
     display: flex;
     flex-wrap: wrap;
     padding: 5px
@@ -80,6 +80,10 @@ label {
     font-weight: bold;
 }
 
+select {
+    min-width: 290px;
+}
+
 .short-text {
     max-width: 100px;
 }
@@ -91,7 +95,7 @@ label {
     }
   }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 700px) {
 .form-container {
     margin: 0%
 }

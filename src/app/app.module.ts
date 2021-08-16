@@ -14,6 +14,7 @@ import { ValuationsDeltaComponent } from './pages/valuations-delta/valuations-de
 import { SidedrawComponent } from './page-components/sidedraw/sidedraw.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FormBuilderComponent } from './forms/form-builder/form-builder.component';
+import { TopnavComponent } from './page-components/topnav/topnav.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FormBuilderComponent } from './forms/form-builder/form-builder.componen
     ValuationsDeltaComponent,
     SidedrawComponent,
     FormBuilderComponent,
+    TopnavComponent,
   ],
   imports: [
     BrowserModule,

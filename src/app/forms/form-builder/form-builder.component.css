@@ -1,6 +1,7 @@
 /* Full screen with responsiveness */
 
 .form-container {
+    /* background-color: red; */
     margin: 0 10%;
 }
 
@@ -45,11 +46,26 @@
     padding: 2px;
 }
 
+.form-navigation-container {
+    /* background-color: lime; */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+
 /* Styling require for input elements */
 
-label, input, select {
+label, input, select, button {
     font-size: 18px;
     border: none;
+}
+
+button {
+    align-items: flex-end;
+    height: 36px;
+    width: 72px;
+
 }
 
 input, select {
@@ -58,6 +74,10 @@ input, select {
 
 input {
     width:100%;
+}
+
+label {
+    font-weight: bold;
 }
 
 .small-text {

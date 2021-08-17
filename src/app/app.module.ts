@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,7 +12,7 @@ import { ValuationsFullComponent } from './pages/valuations-full/valuations-full
 import { ValuationsDeltaComponent } from './pages/valuations-delta/valuations-delta.component';
 import { SidedrawComponent } from './page-components/sidedraw/sidedraw.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { FormBuilderComponent } from './forms/form-builder/form-builder.component';
+import { FormBuilderComponent } from './forms/form-assembler/form-assembler.component';
 import { TopnavComponent } from './page-components/topnav/topnav.component';
 
 @NgModule({

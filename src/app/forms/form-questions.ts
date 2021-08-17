@@ -14,27 +14,27 @@ export const formQuestionNameOfBusiness: formStandardTextQuestion = {
 
 export const formQuestionBusinessEntityType: formDropDownQuestion = {
   inputType: 'dropDown',
-  label: 'Business Entity Type',
+  label: 'Entity Type',
   tag: 'entity-type',
   dropDownOptions: entityTypes,
 };
 
 export const formQuestionBusinessFoundingYear: formShortTextQuestion = {
   inputType: 'short-text',
-  label: 'Business Founding Year',
+  label: 'Founding Year',
   tag: 'founding-year',
 };
 
 const formQuestionBusinessSector: formDropDownQuestion = {
     inputType: 'dropDown',
-    label: 'Business Sector',
+    label: 'Sector',
     tag: 'sector',
     dropDownOptions: sectors,
   }
 
   const formQuestionBusinessIndustryGroups: formDropDownQuestion = {
     inputType: 'dropDown',
-    label: 'Business Industry Group',
+    label: 'Industry Group',
     tag: 'industry-group',
     dropDownOptions: IndustryGroup.CommunicationServices,
   }

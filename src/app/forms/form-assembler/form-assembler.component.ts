@@ -3,9 +3,9 @@ import { formTemplateObject } from '../form-interfaces';
 import { formEstimatesBusinessBasics } from '../forms';
 
 @Component({
-  selector: 'app-form-builder',
-  templateUrl: './form-builder.component.html',
-  styleUrls: ['./form-builder.component.css'],
+  selector: 'app-form-assembler',
+  templateUrl: './form-assembler.component.html',
+  styleUrls: ['./form-assembler.component.css'],
 })
 export class FormBuilderComponent implements OnInit {
   formContent!: formTemplateObject;

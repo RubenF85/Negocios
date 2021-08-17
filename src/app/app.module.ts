@@ -14,6 +14,8 @@ import { SidedrawComponent } from './page-components/sidedraw/sidedraw.component
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FormBuilderComponent } from './forms/form-assembler/form-assembler.component';
 import { TopnavComponent } from './page-components/topnav/topnav.component';
+import { SimpleQuestionComponent } from './forms/form-assembler/simple-question/simple-question.component';
+import { CascadeQuestionComponent } from './forms/form-assembler/cascade-question/cascade-question.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { TopnavComponent } from './page-components/topnav/topnav.component';
     SidedrawComponent,
     FormBuilderComponent,
     TopnavComponent,
+    SimpleQuestionComponent,
+    CascadeQuestionComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-simple-question',
+  templateUrl: './simple-question.component.html',
+  styleUrls: ['./simple-question.component.css']
+})
+export class SimpleQuestionComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

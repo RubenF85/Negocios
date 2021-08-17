@@ -7,9 +7,7 @@ export interface formTemplateObject {
 // Questions Interfaces
 export interface formQuestionMinimumContent {
     label: string,
-    labelFor: string,
-    inputID: string,
-    inputName: string,
+    tag: string, /*One field for For ID and Name*/
 }
 
 export interface formStandardTextQuestion extends formQuestionMinimumContent {

@@ -1,1 +1,14 @@
-<p>cascade-question works!</p>
+<div *ngFor='let subQuestion of question.questionsList' >    
+    <div class='question-container'>
+        <div class='label-container'>
+            <label for={{question.tag}}>{{subQuestion.label}}</label>
+        </div>
+        <div class='response-container'>
+            <select id={{question.inputID}} name={{question.tag}} required>
+                <option *ngFor='let option of subQuestion.dropDownOptions' value="option">
+                    {{option}}
+                </option>
+            </select>
+        </div>
+    </div>
+</div>

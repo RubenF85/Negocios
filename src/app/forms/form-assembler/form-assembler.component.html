@@ -1,37 +1,20 @@
 <div class='form-container'>
+    <!-- Header -->
     <div class='header-container'>
         {{ formContent.header }}
     </div>
-
+    <!-- Questions  -->
     <div class="questionaire-container">
         <div *ngFor='let question of formContent.questions'>
             <div [ngSwitch]='question.inputType'> 
-
-                <div *ngSwitchCase="'cascading'">
-                    <div *ngFor='let subQuestion of question.questionsList' >    
-                        <div class='question-container'>
-                            <div class='label-container'>
-                                <label for={{question.tag}}>{{subQuestion.label}}</label>
-                            </div>
-                            <div class='response-container'>
-                                <select id={{question.inputID}} name={{question.tag}} required>
-                                    <option *ngFor='let option of subQuestion.dropDownOptions' value="option">
-                                        {{option}}
-                                    </option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div *ngSwitchDefault>
-                    <app-simple-question [question]='question'></app-simple-question>
-                </div>
-                
+                <app-cascade-question *ngSwitchCase="'cascading'" [question]='question'></app-cascade-question>
+                <app-simple-question *ngSwitchDefault [question]='question'></app-simple-question>
             </div>
         </div>
     </div>
+    <!-- Navigation  -->
     <div class='form-navigation-container'>
         <button style='background-color: blue; color: white;' (click)='nextForm()'>Next</button>
     </div>
+
 </div>

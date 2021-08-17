@@ -1,1 +1,16 @@
-<p>simple-question works!</p>
+<div class='question-container'>
+    <div class='label-container'>
+        <label for={{question.labelFor}}>{{question.label}}</label>
+    </div>
+    <div [ngSwitch]='question.inputType' class='response-container'>
+        <input *ngSwitchCase="'standard-text'" type={{question.inputType}} id={{question.tag}}
+            name={{question.tag}}>
+        <input *ngSwitchCase="'short-text'" class='short-text' type={{question.inputType}}
+            id={{question.tag}} name={{question.tag}}>
+        <select *ngSwitchCase="'dropDown'" id={{question.tag}} name={{question.tag}} required>
+            <option *ngFor='let option of question.dropDownOptions' value="option">
+                {{option}}
+            </option>
+        </select>
+    </div>     
+</div>
